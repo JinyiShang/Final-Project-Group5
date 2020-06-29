@@ -1,6 +1,6 @@
 
 ## Content
-* [Data Preprocess](#preprocess the data)  
+* [Data Preprocess](#Preprocess the data)
 * [Load Data and Split Train and Test Data](#Load-Data-and-Split-Train-and-Test-Data)  
 * [RandomizedSearchCV](#RandomizedSearchCV)  
 * [Train the Model to get MSE and R2](#Train-the-Model-to-get-MSE-and-R2)  
