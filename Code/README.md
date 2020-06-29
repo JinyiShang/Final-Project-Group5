@@ -7,6 +7,7 @@
   * [Error and Epochs](#Error-and-Epochs)  
   * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
 * [Ensemble methods](#Ensemble methods)  
+
 ## Neural Network
 This part will show the application of Neural Network on specific data and the results of it.
 
