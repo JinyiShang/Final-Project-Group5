@@ -1,18 +1,15 @@
-
+# Final-Project-Group5-Code
 ## Content
 * [Data Preprocessing](#Data-Preprocessing)
   * [Load Data and Summarize Data](#Load-Data-and-Summarize-Data)  
   * [Fill the Missing Values](#Fill-the-Missing-Values)
   * [Standardization](#Standardization)
   * [Significance Test](#Significance-Test)
-* [Load Data and Split Train and Test Data](#Load-Data-and-Split-Train-and-Test-Data)  
-* [RandomizedSearchCV](#RandomizedSearchCV)  
-* [Train the Model to get MSE and R2](#Train-the-Model-to-get-MSE-and-R2)  
-* [Plot results](#Plot-results)  
-  * [Error and Epochs](#Error-and-Epochs)  
-  * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
 * [Linear regression](#Linear-regression) 
 * [Neural network](#Neural-network) 
+  * [RandomizedSearchCV](#RandomizedSearchCV)  
+  * [Train the Model to get MSE and R2](#Train-the-Model-to-get-MSE-and-R2)  
+  * [Plot results](#Plot-results)  
 * [Ensemble methods](#Ensemble-methods)  
 
 ## Data Preprocessing
@@ -126,24 +123,6 @@ print("R^2:", r2_score(y_test, y_pred1))
 
 ## Neural Network
 This part will show the application of Neural Network on specific data and the results of it.
-
-### Load Data and Split Train and Test Data
-Firstly, read the preprocessed data, taking the last column 'MEDV' as target, and the rest columns as features.
-Then, split data into train and test data.
-
-```
-boston = 'data3.csv'
-
-boston = pd.read_csv(boston)
-
-features = boston.iloc[:, 0:-1]
-features = np.array(features)
-target = boston.iloc[:, -1]
-target = np.array(target)
-rs = 1
-
-X_train, X_test, y_train, y_test = train_test_split(features, target, random_state=rs)
-```
 
 ### RandomizedSearchCV
 RandomizedSearchCV is a grid search for parameters by sampling in the parameter space. It runs faster than GridSearchCV.
