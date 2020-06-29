@@ -6,6 +6,7 @@
 * [Plot results](#Plot-results)  
   * [Error and Epochs](#Error-and-Epochs)  
   * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
+* [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
 * [Ensemble methods](#Ensemble methods)  
 
 ## Neural Network
