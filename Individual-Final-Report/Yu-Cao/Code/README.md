@@ -51,7 +51,11 @@ def selepara_RSCV(Model, params, X, Y):
             n = i
 
     return n, score, parameters
-```
+```  
+The best parameters are:
+**Parameters** | **activation** | **solver** | **batch_size** |  **max_iter** |  **early_stopping**  
+---- | ---- | ---- | ---- | ---- | ----  
+**Value** | relu | sgd | 70 | 11000 | True  
 
 ## Train the Model to get MSE and R2
 Train the MLPRegressor() model with parameters got above.
