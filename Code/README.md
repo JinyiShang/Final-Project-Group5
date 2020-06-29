@@ -1,5 +1,3 @@
-## Neural Network
-This part will show the application of Neural Network on specific data and the results of it.
 
 ## Content
 * [Load Data and Split Train and Test Data](#Load-Data-and-Split-Train-and-Test-Data)  
@@ -8,6 +6,9 @@ This part will show the application of Neural Network on specific data and the r
 * [Plot results](#Plot-results)  
   * [Error and Epochs](#Error-and-Epochs)  
   * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
+  
+## Neural Network
+This part will show the application of Neural Network on specific data and the results of it.
 
 ### Load Data and Split Train and Test Data
 Firstly, read the preprocessed data, taking the last column 'MEDV' as target, and the rest columns as features.
@@ -37,13 +38,10 @@ And it returns n_iter, best_score and best_params.
 def selepara_RSCV(Model, params, X, Y):
 
     n_iter = np.arange(200, 400, 50)
-
     score = 0
 
     for i in n_iter:
-
         clf = RandomizedSearchCV(Model, params, n_iter=i, n_jobs=-1, cv=5)
-
         grid_result = clf.fit(X, Y)
 
         if grid_result.best_score_ > score:
