@@ -11,14 +11,14 @@
 This part will show the process of data preprocessing.
 
 ## Load Data and Summarize Data
-'''
+```
 addr = 'datasets_HousingData.csv'
 boston_housing = pd.read_csv(addr)
 boston_housing.info()
 boston_housing.drop_duplicates()
 pd.set_option('display.max_columns', None)
 boston_housing.describe()
-'''
+```
 
 ## Fill the Missing Values
 1. Get features that exist missing values.
@@ -28,7 +28,7 @@ boston_housing.describe()
    Use "mode" method to fill the dummy variable.
 4. Get the new dataset that has filled the missing values.
 
-'''
+```
 result_isnull = boston_housing.isnull().any()
 num_isnull = boston_housing.isnull().sum()
 result_columns = boston_housing.columns[result_isnull]
@@ -58,7 +58,7 @@ df['LSTAT'] = imp1.transform(np.array(boston_housing['LSTAT']).reshape(-1, 1))
 
 price = df['MEDV']
 features = df.drop('MEDV', axis=1)
-'''
+```
 
 ## Non-linear Transformation
 First, we obtain the distribution of every feature. Due to most features are skewed distributed, we choose a non-linear transformation to deal with data. We choose "Yeo-Johnson" transfer function.
@@ -66,7 +66,7 @@ First, we obtain the distribution of every feature. Due to most features are ske
 ## Standardization
 We use the z-score normalization, which is also called standardization. After standardization, the mean value of the data is 0 and the standard deviation is 1.
 
-'''
+```
 cols = list(df.columns)
 for col in cols:
     sns.distplot(df[col])
@@ -75,12 +75,12 @@ for col in cols:
     
 pt = preprocessing.PowerTransformer()
 features_pt = pt.fit_transform(features)
-'''
+```
 
 ## Significance Test
 We use the SelectKBset package to get the f-test value, mutual-info value and the responding p-value.
 
-'''
+```
 f_test, _ = f_regression(features_pt, price)
 mi = mutual_info_regression(features_pt, price)
 new = SelectKBest(f_regression, k='all')
@@ -92,13 +92,13 @@ for i in range(len(cols)):
     plt.xlabel("{}".format(cols[i]), fontsize=14)
     plt.title("F-test={:.2f}, MI={:.2f}, p_value={:.2f}".format(f_test[i], mi[i], new.pvalues_[i]))
     plt.show()
-'''
+```
 
 # Linear Regression
 We separate the dataset to train dataset and test dataset. We use the sklearn.Linear Regression method to achieve the least square errors.
 Then we get the coefficients of linear models, mean square errors and R-square. Also, we drow the plot of comparision between true values and predicted values. 
 
-'''
+```
 x_train, x_test, y_train, y_test = train_test_split(features_pt, price, random_state=1)
 
 lr1 = LinearRegression()
@@ -114,4 +114,4 @@ print('The coefficients of linear regression model are:', lr1.coef_)
 print('The intercept of linear regression model is:', lr1.intercept_)
 print("MSE:", metrics.mean_squared_error(y_test, y_pred1))
 print("R^2:", r2_score(y_test, y_pred1))
-'''
+```
