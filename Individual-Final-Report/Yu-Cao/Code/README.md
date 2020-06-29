@@ -1,7 +1,7 @@
 # Neural Network
 
 ## Content
-* [Load Data and Split Train and Test Data](#Load Data and Split Train and Test Data)
+*[Load Data and Split Train and Test Data](#Load Data and Split Train and Test Data)
 
 ## Load Data and Split Train and Test Data
 Firstly, read the preprocessed data, taking the last column 'MEDV' as target, and the rest columns as features.
