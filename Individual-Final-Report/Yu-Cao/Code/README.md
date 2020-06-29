@@ -67,6 +67,19 @@ nn = MLPRegressor(hidden_layer_sizes=hls,
                   early_stopping=paras['early_stopping'],
                   batch_size=paras['batch_size'],
                   random_state=50)
+```
+Use the defined function named 'train_model()' to get MSE, R2, prediction.
+```
+def train_model(model):
+    model.fit(x_train, y_train)
+    # prediction
+    pred = model.predict(x_test)
+    # Show the results
+    mse = metrics.mean_squared_error(y_test, pred)
+    r2 = r2_score(y_test, pred)
+    return mse, r2, model.loss_curve_, pred
+```
+```
 MSE, R2, Loss_curve, prediction = train_model(nn)
 ```
 
