@@ -36,13 +36,10 @@ And it returns n_iter, best_score and best_params.
 def selepara_RSCV(Model, params, X, Y):
 
     n_iter = np.arange(200, 400, 50)
-
     score = 0
 
     for i in n_iter:
-
         clf = RandomizedSearchCV(Model, params, n_iter=i, n_jobs=-1, cv=5)
-
         grid_result = clf.fit(X, Y)
 
         if grid_result.best_score_ > score:
