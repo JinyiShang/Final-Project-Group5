@@ -206,10 +206,14 @@ plt.show()
 
 ### Ensemble methods
 ```
-RF.py 
+from sklearn.ensemble import RandomForestRegressor
+model = RandomForestRegressor(n_estimators=100,random_state=1, max_depth=10)
+model.fit(X_train,y_train)
 ```
 for Random Forest model  
 ```
-GBR.py 
+from sklearn.ensemble import GradientBoostingRegressor
+reg = GradientBoostingRegressor(random_state=1,min_samples_leaf=1)
+reg.fit(X_train, y_train)
 ```
 for Gradient boosting method
