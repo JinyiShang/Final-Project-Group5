@@ -1,7 +1,7 @@
 
 ## Content
 * [Data Preprocessing](#Data-Preprocessing)
-  * [Load Data and Summarize Data](#Load-Data-and-Summarize Data)  
+  * [Load Data and Summarize Data](#Load-Data-and-Summarize-Data)  
   * [Fill the Missing Values](#Fill-the-Missing-Values)
   * [Standardization](#Standardization)
   * [Significance Test](#Significance-Test)
