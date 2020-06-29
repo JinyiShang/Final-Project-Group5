@@ -5,12 +5,8 @@
 * [Train the Model to get MSE and R2](#Train-the-Model-to-get-MSE-and-R2)  
 * [Plot results](#Plot-results)  
   * [Error and Epochs](#Error-and-Epochs)  
-  * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value)
-* [Linear regression](#linear regression)
-* [Linear regression](#Linear regression)
-* [Neural network](#Neural network)  
-* [Ensemble method](#Ensemble method)  
-  
+  * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
+* [Ensemble methods](#Ensemble methods)  
 ## Neural Network
 This part will show the application of Neural Network on specific data and the results of it.
 
@@ -113,3 +109,11 @@ plt.show()
 ```
 
 ### Ensemble method
+```
+RF.py 
+```
+for Random Forest model  
+```
+GBR.py 
+```
+for Gradient boosting method
