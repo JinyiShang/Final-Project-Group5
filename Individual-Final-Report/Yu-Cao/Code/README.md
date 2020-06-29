@@ -1,7 +1,7 @@
 # Neural Network
 
 ## Content
-* [Load](#Load)  
+* [Load](#Load Data and Split Train and Test Data)  
 * [RandomizedSearchCV](#RandomizedSearchCV)  
 * [Train the Model to get MSE and R2](#Train the Model to get MSE and R2)  
 * [Plot results](#Plot results)  
