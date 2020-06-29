@@ -5,7 +5,10 @@
 * [Train the Model to get MSE and R2](#Train-the-Model-to-get-MSE-and-R2)  
 * [Plot results](#Plot-results)  
   * [Error and Epochs](#Error-and-Epochs)  
-  * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
+  * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value)
+* [Linear regression](#Linear regression)
+* [Neural network](#Neural network)
+* [Ensemble method](#Ensemble method) 
   
 ## Neural Network
 This part will show the application of Neural Network on specific data and the results of it.
@@ -108,3 +111,4 @@ plt.savefig('Real vs. Fitted.png')
 plt.show()
 ```
 
+#### Ensemble method
