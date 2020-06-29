@@ -6,8 +6,9 @@
 * [Plot results](#Plot-results)  
   * [Error and Epochs](#Error-and-Epochs)  
   * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value) 
-* [REnsemble-methods](#Real-Value-and-Fitted-Valuee) 
-* [Ensemble-methods](#Ensemble-methods)  
+* [Linear regression](#Linear-regression) 
+* [Neural network](#Neural-network) 
+* [Ensemble methods](#Ensemble-methods)  
 
 ## Neural Network
 This part will show the application of Neural Network on specific data and the results of it.
