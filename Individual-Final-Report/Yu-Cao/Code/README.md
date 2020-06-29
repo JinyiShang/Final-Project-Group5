@@ -1,5 +1,8 @@
 # Neural Network
 
+## Content
+<!-- MarkdownTOC levels='1,2,3' autolink='true' style='ordered' -->
+
 ## Load Data and Split Train and Test Data
 Firstly, read the preprocessed data, taking the last column 'MEDV' as target, and the rest columns as features.
 Then, split data into train and test data.
@@ -20,7 +23,7 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, random_sta
 
 ## RandomizedSearchCV
 RandomizedSearchCV is a grid search for parameters by sampling in the parameter space. It runs faster than GridSearchCV.
-And its search ability depends on the set 'n_iter' parameter.
+And its search ability depends on the set 'n_iter' parameter.  
 So, I define a function named 'selepara_RSCV()' to run RandomizedSearchCV() with different n_iter.
 And it returns n_iter, best_score and best_params.
 
@@ -46,7 +49,7 @@ def selepara_RSCV(Model, params, X, Y):
 ```
 
 ## Train the Model to get MSE and R2
-Train the MLPRegressor() model with parameters get above.
+Train the MLPRegressor() model with parameters got above.
 ```
 nn = MLPRegressor(hidden_layer_sizes=hls,
                   activation=paras['activation'],
