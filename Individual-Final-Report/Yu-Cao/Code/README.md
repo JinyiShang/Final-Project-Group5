@@ -1,8 +1,7 @@
 # Neural Network
 
 ## Content
-git clone git@github.com:naokazuterada/MarkdownTOC.git ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/MarkdownTOC
-<!-- MarkdownTOC levels='1,2,3' autolink='true' style='ordered' -->
+* [Load Data and Split Train and Test Data](#Load Data and Split Train and Test Data)
 
 ## Load Data and Split Train and Test Data
 Firstly, read the preprocessed data, taking the last column 'MEDV' as target, and the rest columns as features.
