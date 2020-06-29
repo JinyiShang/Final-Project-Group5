@@ -1,7 +1,12 @@
 # Neural Network
 
 ## Content
-*[Load Data and Split Train and Test Data](#Load Data and Split Train and Test Data)
+ *[Load Data and Split Train and Test Data](#Load Data and Split Train and Test Data)  
+ *[RandomizedSearchCV](#RandomizedSearchCV)  
+ *[Train the Model to get MSE and R2](#Train the Model to get MSE and R2)  
+ *[Plot results](#Plot results)  
+  *[Error and Epochs](#Error and Epochs)  
+  *[Real Value and Fitted Value](#Real Value and Fitted Value) 
 
 ## Load Data and Split Train and Test Data
 Firstly, read the preprocessed data, taking the last column 'MEDV' as target, and the rest columns as features.
