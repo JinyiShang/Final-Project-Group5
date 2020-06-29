@@ -6,8 +6,7 @@
 * [Plot results](#Plot-results)  
   * [Error and Epochs](#Error-and-Epochs)  
   * [Real Value and Fitted Value](#Real-Value-and-Fitted-Value)
-* [文本](#文本)
-* [Linear regression](#Linear regression)  
+* [Linear regression](#Linear regression)
 * [Neural network](#Neural network)  
 * [Ensemble method](#Ensemble method)  
   
