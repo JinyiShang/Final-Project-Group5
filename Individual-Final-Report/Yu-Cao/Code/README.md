@@ -5,7 +5,6 @@ Firstly, read the preprocessed data, taking the last column 'MEDV' as target, an
 Then, split data into train and test data.
 
 ```
-//
 boston = 'data3.csv'
 
 boston = pd.read_csv(boston)
@@ -26,7 +25,6 @@ So, I define a function named 'selepara_RSCV()' to run RandomizedSearchCV() with
 And it returns n_iter, best_score and best_params.
 
 ```
-//
 def selepara_RSCV(Model, params, X, Y):
 
     n_iter = np.arange(200, 400, 50)
@@ -50,8 +48,6 @@ def selepara_RSCV(Model, params, X, Y):
 ## Train the Model to get MSE and R2
 Train the MLPRegressor() model with parameters get above.
 ```
-//
-# Train the model
 nn = MLPRegressor(hidden_layer_sizes=hls,
                   activation=paras['activation'],
                   solver=paras['solver'],
@@ -67,7 +63,6 @@ MSE, R2, Loss_curve, prediction = train_model(nn)
 ### Error and Epochs
 Plot the MSE and Epochs image to see whether and when the model becomes convergence.
 ```
-//
 pd.DataFrame(Loss_curve).plot()
 plt.title('Error vs. Epochs')
 plt.xlabel('Epochs')
@@ -80,7 +75,6 @@ plt.show()
 ### Real Value and Fitted Value
 Plot the real house price with the fitted house price to see how the model perform.
 ```
-//
 plt.plot(range(len(y_test)), y_test, c='b')
 plt.plot(range(len(prediction)), prediction, c='r')
 plt.title('Real vs. Fitted')
