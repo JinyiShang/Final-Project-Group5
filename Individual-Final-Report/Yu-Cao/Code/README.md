@@ -30,7 +30,8 @@ X_train, X_test, y_train, y_test = train_test_split(features, target, random_sta
 RandomizedSearchCV is a grid search for parameters by sampling in the parameter space. It runs faster than GridSearchCV.
 And its search ability depends on the set 'n_iter' parameter.  
 So, I define a function named 'selepara_RSCV()' to run RandomizedSearchCV() with different n_iter.
-And it returns n_iter, best_score and best_params.
+And it returns n_iter, best_score and best_params.  
+  
 *Note*: This part is writen in a single file named 'RandomizedSearchCV_Neural_Network.py' due to time consuming of running it.
 ```
 def selepara_RSCV(Model, params, X, Y):
