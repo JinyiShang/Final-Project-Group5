@@ -11,8 +11,9 @@ Here is the structure of our repoistory and how it works.
   * [Yu Cao](#Yu-Cao)
 
 ## Code
-This folder includs two file -- 'project_group5.py' and 'README.md'.  
+This folder includs three file -- 'project_group5.py', 'datasets_HousingData.csv' and 'README.md'.  
 'project_group5.py' contains all code that we write to do the project. Please run it if you want to see the results.  
+'datasets_HousingData.csv' is the original data. If you want to run the code, please download this file too.
 'README.md' shows the order of code and a shor description of what each script does.  
 *Note*: Due to time consuming, 'RandomizedSearchCV' part is marked as comment in 'project_group5.py', we directly use its running results.
 If you want to check the results, you can run it in Individual-Final-Report/Yu-Cao/Code/RandomizedSearchCV_Neural_Network.py.  
