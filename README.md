@@ -22,7 +22,7 @@ If you want to check the results, you can run it in Individual-Final-Report/Yu-C
 This folder includs a pdf file named 'Final-Group-Presentation.pdf'.  
 
 ## Final Group Project Report
-This folder includs a pdf file named 'Final Report.pdf'.  
+This folder includs a pdf file named 'Final-Group-Project- Report.pdf'.  
 
 ## Group Proposal
 This folder includs a pdf file named 'Group_Proposal.pdf'.  
