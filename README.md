@@ -17,7 +17,8 @@ This folder includs two file -- 'project_group5.py' and 'README.md'.
 *Note*: Due to time consuming, 'RandomizedSearchCV' part is marked as comment in 'project_group5.py', we directly use its running results.
 If you want to check the results, you can run it in Individual-Final-Report/Yu-Cao/Code/RandomizedSearchCV_Neural_Network.py.  
 
-## Final Group Presentation
+## Final Group Presentation  
+This folder includs a pdf file named 'Final-Group-Presentation.pdf'.  
 
 ## Final Group Project Report
 This folder includs a pdf file named 'Final Report.pdf'.  
