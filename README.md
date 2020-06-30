@@ -13,9 +13,9 @@ Here is the structure of our repoistory and how it works.
 ## Code
 This folder includs two file -- 'project_group5.py' and 'README.md'.  
 'project_group5.py' contains all code that we write to do the project. Please run it if you want to see the results.  
-Note: Due to time consuming, 'RandomizedSearchCV' part is marked as comment, we directly use irs running results.
-If you want to check the results, you can run it in Individual-Final-Report/Yu-Cao/Code/.  
-'README.md' shows the order of code and a shor description of what each script does.
+'README.md' shows the order of code and a shor description of what each script does.  
+*Note*: Due to time consuming, 'RandomizedSearchCV' part is marked as comment in 'project_group5.py', we directly use its running results.
+If you want to check the results, you can run it in Individual-Final-Report/Yu-Cao/Code/RandomizedSearchCV_Neural_Network.py.  
 
 ## Final Group Presentation
 
